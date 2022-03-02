@@ -307,6 +307,6 @@ if section_setup.button("Gather events"):
         csv,
         "file.csv",
         "text/csv",
-        key='download-csv'
+        key="download-csv"
         )
     
