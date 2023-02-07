@@ -92,8 +92,6 @@ if section_setup.button("Gather events"):
         "URL": stacks[stack]
         }
 
-    link = (settings["URL"]+"/admin/projects/102/queue/"+settings["job_id"])
-
     headers = {
         'X-StorageApi-Token': settings["token"],
         "Accept": "application/json"}
@@ -104,7 +102,7 @@ if section_setup.button("Gather events"):
     }
     
     section_main.text("Selected job: "+settings["job_id"])
-    section_main.text(link)
+    section_main.text("Contacting URL: "+settings["URL"])
 
     section_main.subheader("Contacting API...")
 
